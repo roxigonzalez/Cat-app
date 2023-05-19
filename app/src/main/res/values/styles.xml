@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ayo_lebih_k">
+        <item name="android:textSize">@dimen/titleTextSize</item>
+        <item name="android:textColor">@color/blue_1</item>
+        <item name="android:fontFamily">@font/wixfont</item>
+    </style>
+
+</resources>

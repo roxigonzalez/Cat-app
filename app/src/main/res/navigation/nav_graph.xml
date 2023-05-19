@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/catListFragment2">
+    <fragment
+        android:id="@+id/catListFragment2"
+        android:name="com.rgonzalez.cattracker.ui.list.CatListFragment"
+        android:label="CatListFragment" >
+        <action
+            android:id="@+id/action_catListFragment2_to_catFragment"
+            app:destination="@id/catFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/catFragment"
+        android:name="com.rgonzalez.cattracker.ui.detail.CatFragment"
+        android:label="fragment_cat"
+        tools:layout="@layout/fragment_cat" />
+</navigation>
