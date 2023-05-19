@@ -7,7 +7,6 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.activityViewModels
 import com.rgonzalez.cattracker.databinding.FragmentCatBinding
-import com.rgonzalez.cattracker.ui.CatViewModel
 
 
 class CatFragment : Fragment() {

@@ -10,13 +10,12 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.rgonzalez.cattracker.data.model.CatModel
 import com.rgonzalez.cattracker.ui.list.recyclerview.CatRecyclerViewAdapter
 import com.rgonzalez.cattracker.databinding.FragmentCatListBinding
-import com.rgonzalez.cattracker.ui.CatViewModel
 
 class CatListFragment : Fragment() {
 
     // 2 After create the view model, initialize it (and of course created the model and the repository)
-    private val catViewModel: CatViewModel by activityViewModels {
-        CatViewModel.Factory
+    private val catViewModel: CatsViewModel by activityViewModels {
+        CatsViewModel.Factory
     }
 
     private lateinit var binding: FragmentCatListBinding

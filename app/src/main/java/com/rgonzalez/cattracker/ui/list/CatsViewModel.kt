@@ -1,4 +1,4 @@
-package com.rgonzalez.cattracker.ui
+package com.rgonzalez.cattracker.ui.list
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
@@ -11,26 +11,17 @@ import com.rgonzalez.cattracker.repositories.CatRepository
 
 
 // TODO: El ViewModel debe tener solo una resposabilidad por lo que deben tener un viewmodel por pantalla
-class CatViewModel(private val repository: CatRepository):ViewModel() {
+class CatsViewModel(private val repository: CatRepository):ViewModel() {
     fun getCats() = repository.getCats()
 
-    fun addCat(cat: CatModel) = repository.addCat(cat)
+//    fun addCat(cat: CatModel) = repository.addCat(cat)
 
-    // declaring variables
-    var name = MutableLiveData("")
-    var age = MutableLiveData("")
-    var color = MutableLiveData("")
 
-    fun setSelectedCat(cat: CatModel) {
-        name.value = cat.name
-        color.value = cat.color
-        age.value = cat.age.toString()
-    }
     companion object {
         val Factory = viewModelFactory {
             initializer {
                 val app = this[APPLICATION_KEY] as CatReviewerApplication
-                CatViewModel(app.catRepository)
+                CatsViewModel(app.catRepository)
             }
         }
     }

@@ -7,7 +7,7 @@
 
         <variable
             name="viewmodel"
-            type="com.rgonzalez.cattracker.ui.CatViewModel" />
+            type="com.rgonzalez.cattracker.ui.detail.CatViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
