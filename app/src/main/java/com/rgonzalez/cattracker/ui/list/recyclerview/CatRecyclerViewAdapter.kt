@@ -29,7 +29,7 @@ class CatRecyclerViewAdapter(
     fun setData(catsList: List<CatModel>) {
         cats.clear()
         cats.addAll(catsList)
-        notifyDataSetChanged() // TODO Forzar update visual
+        notifyDataSetChanged() // TODO Forzar update visual ?
     }
 
 
