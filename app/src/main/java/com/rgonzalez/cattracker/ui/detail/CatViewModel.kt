@@ -11,7 +11,7 @@ import com.rgonzalez.cattracker.data.model.CatModel
 import com.rgonzalez.cattracker.repositories.CatRepository
 
 
-// TODO: El ViewModel debe tener solo una resposabilidad por lo que deben tener un viewmodel por pantalla
+// Solved: El ViewModel debe tener solo una resposabilidad por lo que deben tener un viewmodel por pantalla
 class CatViewModel(private val repository: CatRepository):ViewModel() {
     private val catModelLiveData = MutableLiveData<CatModel>()
 

@@ -1,5 +1,6 @@
 package com.rgonzalez.cattracker.ui.detail
 
+import android.content.Context
 import android.os.Bundle
 import android.util.Log
 import androidx.fragment.app.Fragment
@@ -24,7 +25,6 @@ class CatFragment : Fragment() {
     }
 
 
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -38,6 +38,9 @@ class CatFragment : Fragment() {
         val catModelFromList = catsViewModel.getCatModel()
         catModelFromList.value?.let { catViewModel.setCatModel(it) }
         binding.viewmodel = catViewModel
+        val context = view.context
+        val resId = context.resources.getIdentifier("cat_${catViewModel.color.value}", "drawable", context.packageName)
+        binding.detailImgCat.setImageResource(resId)
         Log.d("TAG",  "${catModelFromList.value.toString()}")
     }
 

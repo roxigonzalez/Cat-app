@@ -14,7 +14,7 @@ class CatRecyclerViewAdapter(
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CatRecyclerViewHolder {
         val binding = CatItemBinding.inflate(LayoutInflater.from(parent.context), parent, false)
-        return CatRecyclerViewHolder(binding)
+        return CatRecyclerViewHolder(binding, parent.context)
     }
 
     override fun getItemCount(): Int {

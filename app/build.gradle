@@ -4,9 +4,7 @@ plugins {
 }
 
 android {
-    dataBinding {
-        enabled true
-    }
+
     namespace 'com.rgonzalez.cattracker'
     compileSdk 33
 
@@ -32,6 +30,12 @@ android {
     }
     kotlinOptions {
         jvmTarget = '1.8'
+    }
+    dataBinding {
+        enabled true
+    }
+    buildFeatures {
+        viewBinding true
     }
 }
 

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Cat Tracker</string>
+    <string name="cats">Gatos</string>
+    <string name="name">Nombre</string>
+    <string name="new_kitty">Nuevo Gato</string>
+    <string name="age">Edad</string>
+    <string name="color">Color</string>
+    <string name="list_cats">Gatos</string>
+    <string name="cat_detail">Detalle de Gato</string>
+    <string name="form_cat_title">Nuevo Gato</string>
+    <string name="cat_name">Nombre</string>
+    <string name="choose_color">Elegir color</string>
+    <string name="button">Botón</string>
+</resources>
